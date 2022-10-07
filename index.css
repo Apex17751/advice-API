@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Epilogue:wght@400;500;600;700&family=Josefin+Sans:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat+Alternates:wght@400;600&family=Montserrat:wght@300;500&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=Poppins:wght@200;300;400;500;600;700&family=Raleway:wght@700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+:root{
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+@media(min-width:400px){
+.landing-page{
+    width: 400px;
+    background-color: #52FEAA;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 20%;
+    color: #202632;
+    height: 400px;
+    padding: 25px;
+    font-size: 12px;
+    border-radius: 30px;
+}
+
+.landing-page h1{
+    font-size: 38px;
+    padding-top: 20px;
+}
+
+.landing-page button{
+    background-color: #202632;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 100px;
+    cursor: pointer;
+}
+
+
+.whole{
+    background-color: #202632;
+    height: 100vh;
+}
+.box{
+    width: 400px;
+    background-color: #313A49;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    color: #D1E7EE;
+    padding: 25px;
+    font-size: 12px;
+    border-radius: 8px;
+    display: none;
+    
+}
+.box h1{
+    margin-bottom: 20px;
+    
+}
+#results {
+    color: #D1E7EE;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.image{
+    margin: auto ;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+.icons{
+    background-color: #52FEAA;
+    border-radius: 50%;
+    display: flex;
+    width: 55px;
+    position: relative;
+    margin-left: 43%;
+    top: 45px;
+    cursor: pointer;
+    transition: .5s;
+
+    
+}
+.icons:hover{
+    box-shadow:  0px 0px 15px 2px hsl(150, 100%, 66%);
+    
+}
+
+}
+
+@media(max-width:399px){
+    .box{
+        width: 100%;
+    }
+    .landing-page{
+        width: 350px;
+        background-color: #52FEAA;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        top: 20%;
+        color: #202632;
+        height: 400px;
+        padding: 25px;
+        font-size: 12px;
+        border-radius: 30px;
+    }
+    
+    .landing-page h1{
+        font-size: 38px;
+        padding-top: 20px;
+    }
+    
+    .landing-page button{
+        background-color: #202632;
+        color: #fff;
+        padding: 15px 25px;
+        border-radius: 30px;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        position: relative;
+        top: 60px;
+        cursor: pointer;
+    }
+    
+    
+    .whole{
+        background-color: #202632;
+        height: 100vh;
+    }
+    .box{
+        width: 350px;
+        background-color: #313A49;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        top: 30%;
+        color: #D1E7EE;
+        padding: 25px;
+        font-size: 12px;
+        border-radius: 8px;
+        display: none;
+        
+    }
+    .box h1{
+        margin-bottom: 20px;
+        
+    }
+    #results {
+        color: #D1E7EE;
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .image{
+        margin: auto ;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        
+    }
+    .pattern{
+        width: 300px;
+    }
+    .icons{
+        background-color: #52FEAA;
+        border-radius: 50%;
+        display: flex;
+        width: 55px;
+        top: 45px;
+        cursor: pointer;
+        transition: .5s;
+        position: relative;
+    margin-left: 40%;
+    top: 45px;
+    
+        
+    }
+    .icons:hover{
+        box-shadow:  0px 0px 15px 2px hsl(150, 100%, 66%);
+        
+    }
+}
+
+

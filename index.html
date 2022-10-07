@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div class="whole">
+    <div class="landing-page">
+      <h1>Welcome to my Advice Generator website &#128525</h1>
+
+      <button type="button" onclick="hideButton()" id="buttons">Continue &rarr;</button>
+  
+    </div>
+
+    <div class="box" id="boxz">
+      <div id="results"></div>
+      <img src="pattern-divider-desktop.svg" alt="" class="pattern" width="350px">
+      <div class="icon">
+       <div class="icons" id="resBtn">
+        <img src="icon-dice.svg" id="iconz"  class="image" alt="">
+       </div>
+      </div>
+    </div>
+
+
+</body>
+
+<script>
+  let showDiceTwo = document.querySelector('#iconz2');
+  let boxHide = document.querySelector('#boxz');
+  let boxHidez = document.querySelector('#boxzz');
+
+
+  const boxHidezFifth = document.querySelector('#boxzz5');
+  const boxHidezSixth = document.querySelector('#boxzz6');
+
+  let btn = document.querySelector('#button'); 
+  let landinPage = document.querySelector('.landing-page');
+
+
+  const result = document.querySelector('#results');
+  const resultbtn = document.querySelector('#resBtn');
+
+resultbtn.addEventListener('click', () => {
+  getAdvice();
+})
+
+  window.onload = () =>{
+    getAdvice();
+  }
+
+ function getAdvice(){
+  fetch('https://api.adviceslip.com/advice').then(response =>{
+    return response.json();
+  }).then(adviceData =>{
+    const AdviceObj = adviceData.slip;
+    result.innerHTML =`<p>${AdviceObj.advice}</p>`
+  })
+ }
+
+
+
+
+  function hideButton(){
+    landinPage.style.display = 'none';
+    boxHide.style.display = 'block';
+  }
+
+
+
+</script>
+</html>
